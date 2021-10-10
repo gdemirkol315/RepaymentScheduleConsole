@@ -17,7 +17,6 @@ console.log('This program is designed to prepare repayment schedules for loans w
 console.log('#######################################################################################');
 
 do {
-    var payments = execute(1500, 3, 'M', '2021-09-30', '2022-12-31');
     console.log('\n\n\nPlease enter loan amount (i.e. 2000000)');
     let loanAmount = Number(prompt('loan amount:'));
 
@@ -70,7 +69,6 @@ do {
 
     console.log('Would you like to recalculate with new parameters? (Y/N)');
    
-
 } while (prompt('recalculate:') == 'Y')
 
 function isValidPaymentStartDate(paymentStart, utilization) {
