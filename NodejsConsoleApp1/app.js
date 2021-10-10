@@ -151,7 +151,7 @@ function execute(loanAmount, interestRate, frequency, utilizationDate, maturityD
     for (let i = 0; i < payments.length; i++) {
         console.log(
             "\npaymentNumber[" + payments[i].id + "]:\n{" +
-            "\n previous payment date: " + convertDateToString(payments[i].paymentDate) +
+            "\n previous payment date: " + convertDateToString(payments[i].previousPaymentDate) +
             "\n payment date: " + convertDateToString(payments[i].paymentDate) +
             "\n principalPayment: " + Math.round(payments[i].principalPayment) +
             "\n accumulating days: " +
